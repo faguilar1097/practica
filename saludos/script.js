@@ -4,9 +4,14 @@ console.log("Se nota que todavía me extrañas");
 
 //console.log("frase " +frase);
 //let frase = document.getElementsByTagName("h2")[1].innerHTML;
-setInterval(cambiarSaludo, 500 ); //Funcion de intervalo de tiempo, algo  que se repite cada cierto tiempo, funciones asíncronas en ms
-
+setInterval(cambiarSaludo, 2000 ); //Funcion de intervalo de tiempo, algo  que se repite cada cierto tiempo, funciones asíncronas en ms
 //Cambiar el texto del h2[1] cada 2 segundos 
+
+// Hacer este tipo de comentarios 
+/**
+ * Cambia la frase en h2
+ * uno sí uno no 
+ */
 function cambiarSaludo (){
  // console.log("Me parece una falta de respeto");
     let frase = document.getElementsByTagName("h2")[1];
