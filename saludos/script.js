@@ -8,13 +8,18 @@ setInterval(cambiarSaludo, 500 ); //Funcion de intervalo de tiempo, algo  que se
 
 //Cambiar el texto del h2[1] cada 2 segundos 
 function cambiarSaludo (){
-   // console.log("Me parece una falta de respeto");
-    let frase = document.getElementsByTagName("h2")[1].innerHTML;
-    if ( document.getElementsByTagName("h2")[1].innerHTML == "Ganando como siempre"){
+ // console.log("Me parece una falta de respeto");
+    let frase = document.getElementsByTagName("h2")[1];
+    // frase.innerText="Impongo moda";
+    // frase.innerHTML="Impongo moda";
 
-        document.getElementsByTagName("h2")[1].innerHTML = "Impongo moda para las niñas!";
+
+    if ( frase.innerHTML == "Ganando como siempre"){
+
+        frase.innerHTML = "Impongo moda para las niñas!";
     }else{
-        document.getElementsByTagName("h2")[1].innerHTML = "Ganando como siempre"
+        frase.innerHTML = "Ganando como siempre"
     }
   //  console.log("frase " +frase);
+
 }
